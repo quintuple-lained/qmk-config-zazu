@@ -65,9 +65,9 @@
 #ifdef RGB_MATRIX_ENABLE
 
 #ifdef MCU_HELIOS
-  #define RGB_DI_PIN GP25
+  #define WS2812_DI_PIN GP25
 #else
-  #define RGB_DI_PIN GP27
+  #define WS2812_DI_PIN GP27
 #endif
 
 #define DRIVER_LED_TOTAL 43

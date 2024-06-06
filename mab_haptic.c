@@ -16,7 +16,7 @@
 
 #include "mab_haptic.h"
 #include "keys.h"
-#include "drivers/haptic/DRV2605L.h"
+#include "drivers/haptic/drv2605l.h"
 
 bool mab_process_record_haptic(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
