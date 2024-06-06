@@ -17,7 +17,7 @@
 #include "mab_haptic.h"
 #include "keys.h"
 #include "drivers/haptic/drv2605l.h"
-
+/*
 bool mab_process_record_haptic(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case G(KC_Q):
@@ -54,7 +54,7 @@ bool mab_process_record_haptic(uint16_t keycode, keyrecord_t *record) {
             break;
         case KC_ESC:
             if (record->event.pressed) {
-                /* DRV_pulse(sharp_tick1); */
+                there was a comment here DRV_pulse(sharp_tick1);
                 DRV_pulse(medium_click1);
             }
             break;
@@ -79,7 +79,7 @@ bool mab_process_record_haptic(uint16_t keycode, keyrecord_t *record) {
 
     return true;
 }
-
+*/
 __attribute__((weak)) bool get_haptic_enabled_key_user(uint16_t keycode, keyrecord_t *record) { return false; }
 
 bool get_haptic_enabled_key(uint16_t keycode, keyrecord_t *record) {

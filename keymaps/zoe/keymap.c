@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, 	KC_Q,  	KC_W,   KC_F,   KC_P,   	KC_B,                   KC_J,      KC_L,   		KC_U,     	KC_Y,   	KC_SCLN,   	KC_NO,
         KC_NO, 	KC_A,  	KC_R,   KC_S,   KC_T,   	KC_G,                   KC_M,      KC_N,   		KC_E,     	KC_I,   	KC_O,   	KC_NO,
               	KC_Z,  	KC_X, 	KC_C,   KC_D,		KC_V,                   KC_K,      KC_H,   		KC_COMM,	KC_DOT,		KC_SLSH,
-                             	MO_NAV, KC_SPACE,  	KC_DT,			KC_COMMA,  OSM(MOD_LSFT), 	MO_SYM,
+                LT(MO_NAV, KC_ESC), MT(MOD_LSFT, KC_TAB),  	LT(MO_SYM, KC_SPC),			LT(MO_SYM, KC_ENT), MT(MOD_RSFT, KC_BSPC) , LT(MO_NAV, KC_DEL),
                                         		KC_BTN3, KC_BTN1, KC_BTN2,
                                      // click  ,  right           , down    , left          , up
                                      ACCEL_TOG , KC_AUDIO_VOL_DOWN, SNP_TOG, KC_AUDIO_VOL_UP, DRG_TOG
@@ -150,7 +150,7 @@ bool caps_word_press_user(uint16_t keycode) {
 
 
 bool sw_win_active = false;
-
+/*
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     process_nshot_state(keycode, record);
     mab_process_record_haptic(keycode, record);
@@ -269,7 +269,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
     return true;
 }
-
+*/
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [HDN]  =  { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN)},
     [NAV]  =  { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN)},
