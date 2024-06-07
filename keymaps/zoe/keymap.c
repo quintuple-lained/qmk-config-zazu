@@ -75,9 +75,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [NAV] = LAYOUT_2_3x5_3(
-        SCRNSHT, SCRNSHT,  KC_ENT,  KC_BSPC,  KC_TAB,  KC_DEL,            DWRD,    KC_NO,     KC_UP,    QUIT,     WRKFLW1,  WRKFLW1,
-        OS_LCTL, OS_LCTL,  OS_LALT, OS_LGUI,  OS_LSFT, SALL,              KC_DOT,  KC_LEFT,   KC_DOWN,  KC_RIGHT, WRKFLW2,  WRKFLW2,
-                 KC_6,  CUT,     COPY,      PASTE,        SALL,              KC_0,    KC_ENT,    KC_BSPC,  KC_TAB,   QK_BOOTLOADER,
+        KC_NO, 	KC_NO,	KC_NO,	KC_NO,  KC_NO,	KC_NO,            					KC_VOLU,    	KC_HOME,    KC_PGUP,	KC_NO,    	KC_,  KC_NO,
+        KC_NO, 	KC_NO,	KC_NO, 	KC_NO,	KC_PSCR,KC_NO,              				KC_LEFT,		KC_DOWN,   	KC_UP,  	KC_RGHT,	KC_INS,  KC_NO,
+				KC_NO,	KC_NO,  KC_NO,  KC_NO,  KC_NO,              				KC_VOLD,    	KC_END,    	KC_PGDN,  	KC_NO,   	KC_NO,
                                    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
                                           KC_TRNS, KC_TRNS, KC_TRNS,
                                          // click  ,  right , down      , left   , up
