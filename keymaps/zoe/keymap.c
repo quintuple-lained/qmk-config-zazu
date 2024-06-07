@@ -33,16 +33,16 @@ enum layers {
 #define MO_SYM MO(2)
 
 // Left-hand home row mods
-#define HOME_A LSFT_T(KC_A)
-#define HOME_R LCTL_T(KC_R)
-#define HOME_S LGUI_T(KC_S)
-#define HOME_T LALT_T(KC_T)
+#define HOME_A LGUI_T(KC_A)
+#define HOME_R LALT_T(KC_R)
+#define HOME_S LSFT_T(KC_S)
+#define HOME_T LCTL_T(KC_T)
 
 // Right-hand home row mods
-#define HOME_N LALT_T(KC_N)
-#define HOME_E RGUI_T(KC_E)
-#define HOME_I RCTL_T(KC_I)
-#define HOME_O RSFT_T(KC_O)
+#define HOME_N RCTL_T(KC_N)
+#define HOME_E RSFT_T(KC_E)
+#define HOME_I LALT_T(KC_I)
+#define HOME_O RGUI_T(KC_O)
 
 // mac
 #define PSTM         G(KC_V)
