@@ -32,6 +32,18 @@ enum layers {
 #define MO_NAV MO(1)
 #define MO_SYM MO(2)
 
+// Left-hand home row mods
+#define HOME_A LSFT_T(KC_A)
+#define HOME_R LCTL_T(KC_R)
+#define HOME_S LGUI_T(KC_S)
+#define HOME_T LALT_T(KC_T)
+
+// Right-hand home row mods
+#define HOME_N LALT_T(KC_N)
+#define HOME_E RGUI_T(KC_E)
+#define HOME_I RCTL_T(KC_I)
+#define HOME_O RSFT_T(KC_O)
+
 // mac
 #define PSTM         G(KC_V)
 #define CPYM         G(KC_C)
@@ -64,9 +76,9 @@ enum layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [HDN] = LAYOUT_2_3x5_3(
-        MT(MOD_LCTL, KC_GRV), 	KC_Q,  	KC_W,   KC_F,   KC_P,   	KC_B,                   KC_J,      KC_L,   		KC_U,     	KC_Y,   	KC_SCLN,   	MT(MOD_RCTL, KC_QUOT),
-        MT(MOD_LALT, KC_MINUS), KC_A,  	KC_R,   KC_S,   KC_T,   	KC_G,                   KC_M,      KC_N,   		KC_E,     	KC_I,   	KC_O,   	MT(MOD_RALT, KC_BSLS),
-              	                KC_Z,  	KC_X, 	KC_C,   KC_D,		KC_V,                   KC_K,      KC_H,   		KC_COMM,	KC_DOT,		KC_SLSH,
+        MT(MOD_LCTL, KC_GRV), 	KC_Q,  	KC_W,   KC_F,   KC_P,   	KC_B,                   KC_J,      	KC_L,   		KC_U,     	KC_Y,   	KC_SCLN,   	MT(MOD_RCTL, KC_QUOT),
+        MT(MOD_LALT, KC_MINUS), HOME_A, HOME_R, HOME_S, HOME_T, 	KC_G, KC_M, 			HOME_N, 	HOME_E, 		HOME_I, 	HOME_O,   	MT(MOD_RALT, KC_BSLS),
+              	                KC_Z,  	KC_X, 	KC_C,   KC_D,		KC_V,                   KC_K,      	KC_H,   		KC_COMM,	KC_DOT,		KC_SLSH,
         LT(MO_NAV, KC_ESC), MT(MOD_LSFT, KC_TAB),  	LT(MO_SYM, KC_SPC),		                LT(MO_SYM, KC_ENT), MT(MOD_RSFT, KC_BSPC) , LT(MO_NAV, KC_DEL),
                                         		                    KC_BTN3, KC_BTN1, KC_BTN2,
                                              // click  ,  right           , down    , left          , up
