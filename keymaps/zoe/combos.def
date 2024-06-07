@@ -1,23 +1,21 @@
-//  name     result    chord keys
-
+// Name       Result  Chord Keys
 // < { [ ( ) ] } >
-//	Left
-COMB(Left Angle	Bracket,	KC_LABK,	KC_Z,KC_X)
-COMB(Letf Curly	Brace,		KC_LCBR,	KC_A,KC_R)
-COMB(Left Square Bracket,	KC_LBRC, 	KC_R,KC_S)
-COMB(Left Parenthesis		KC_LPRN,	KC_S,KC_T)
+COMB(Left_Angle_Bracket,  	KC_LABK,  	KC_Z, KC_X)
+COMB(Left_Curly_Brace,   	KC_LCBR,   	KC_A, KC_R)
+COMB(Left_Square_Bracket, 	KC_LBRC,   	KC_R, KC_S)
+COMB(Left_Parenthesis,   	KC_LPRN,   	KC_S, KC_T)
 // Right
-COMB(Right Parenthesis,		KC_RPRN,	KC_N,KC_E)
-COMB(Right Square Bracket,	KC_RBRC,	KC_E,KC_I)
-COMB(Right Curly Brace,		KC_RCBR,	KC_I,KC_O)
-COMB(Right Angle Bracket,	KC_RABK,	KC_DOT,KC_SLSH)
+COMB(Right_Parenthesis,  	KC_RPRN,   	KC_N, KC_E)
+COMB(Right_Square_Bracket,	KC_RBRC,   	KC_E, KC_I)
+COMB(Right_Curly_Brace,  	KC_RCBR,  	KC_I, KC_O)
+COMB(Right_Angle_Bracket, 	KC_RABK,	KC_DOT, KC_SLSH)
 
-// Lazy	stuff
-COMB(Home,					KC_HOME,	KC_L,KC_U)
-COMB(End,					KC_END,		KC_H,KC_COMMA)
-COMB(Copy,					LCTL(KC_C),	KC_F,KC_P)
-COMB(Paste,					LCTL(KC_V), KC_C,KC_D)
+// Lazy  stuff
+COMB(Home,                	KC_HOME,   	KC_L, KC_U)
+COMB(End,                 	KC_END,    	KC_H, KC_COMMA)
+COMB(Copy,                	C(KC_C),      	KC_F, KC_P)
+COMB(Paste,                	C(KC_V),      	KC_C, KC_D)
 
 // QMK
-COMB(BOOT,  QK_BOOT,  KC_COMMA, KC_X, KC_QUOTE, KC_J)
-COMB(RESET, EE_CLR,   KC_F, KC_M, KC_P, KC_B)
+COMB(BOOT,                	QK_BOOT,   	KC_P, KC_B, KC_J, KC_L)
+COMB(RESET,               	EE_CLR,    	KC_F, KC_M, KC_P, KC_B)
