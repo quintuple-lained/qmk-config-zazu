@@ -75,19 +75,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [NAV] = LAYOUT_2_3x5_3(
-        KC_NO, 	KC_NO,	KC_NO,	KC_NO,  KC_NO,	KC_NO,            					KC_VOLU,    	KC_HOME,    KC_PGUP,	KC_NO,    	KC_NO,  KC_NO,
-        KC_NO, 	KC_NO,	KC_NO, 	KC_NO,	KC_PSCR,KC_NO,              				KC_LEFT,		KC_DOWN,   	KC_UP,  	KC_RGHT,	KC_INS,  KC_NO,
-				KC_NO,	KC_NO,  KC_NO,  KC_NO,  KC_NO,              				KC_VOLD,    	KC_END,    	KC_PGDN,  	KC_NO,   	KC_NO,
-                                   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_NO, 	KC_F1,	KC_F2,	KC_F3,  KC_F4,	KC_NO,            					KC_VOLU,    	KC_HOME,    KC_PGUP,	KC_NO,    	KC_NO,  KC_NO,
+        KC_NO, 	KC_F5,	KC_F6, 	KC_F7,	KC_F8,	KC_PSCR,              				KC_LEFT,		KC_DOWN,   	KC_UP,  	KC_RGHT,	KC_INS,  KC_NO,
+				KC_F9,	KC_F10, KC_F11, KC_F12,	KC_NO,              				KC_VOLD,    	KC_END,    	KC_PGDN,  	KC_NO,   	KC_NO,
+                            KC_TRNS, KC_TRNS, KC_TRNS, 								KC_TRNS, KC_TRNS, KC_TRNS,
                                           KC_TRNS, KC_TRNS, KC_TRNS,
                                          // click  ,  right , down      , left   , up
                                             KC_TRNS, KC_TRNS, DPI_RMOD, KC_TRNS, DPI_MOD
     ),
     [SYM] = LAYOUT_2_3x5_3(
-        KC_NO, KC_9,   KC_9,   KC_8,   KC_7,   KC_EQUAL,           KC_COMMA, KC_SCLN, KC_COLN, KC_BSLS,  KC_GRAVE, KC_GRAVE,
-        KC_2,     KC_3,   KC_2,   KC_1,   KC_0,   KC_MINUS,           KC_DOT,   OS_LSFT, OS_LGUI,  OS_RALT, OS_LCTL,  OS_LCTL,
-                  KC_6,   KC_6,   KC_5,   KC_4,   KC_0,               KC_0,     KC_QUES, KC_EXLM, KC_SLSH,  KC_6,
-                                 KC_TRNS,       KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_PLUS, 	KC_NO,   	KC_NO,	KC_NO,   	KC_NO,   	KC_NO,          KC_NO, 		KC_NO, 		KC_NO, 		KC_NO,  	KC_NO, 		KC_NO,
+        KC_EQL,		KC_EXLM,   	KC_AT,	KC_HASH, 	KC_DLR,  	KC_PERC,        KC_CIRC,   	KC_AMPR,	KC_ASTR, 	KC_LPRN, 	KC_RPRN,  	KC_NO,
+					KC_1,   	KC_2,	KC_3,		KC_4,   	KC_5,			KC_6,     	KC_7, 		KC_8, 		KC_9,  		KC_0,
+                KC_TRNS,       	KC_TRNS,    KC_TRNS,						KC_TRNS, KC_TRNS, KC_TRNS,
                                             RGB_HUD, RGB_SAI, RGB_SAD,
                                          // click  ,  right , down      , left   , up
                                             RGB_TOG, RGB_VAI, RGB_RMOD, RGB_VAD, RGB_MOD
