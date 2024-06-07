@@ -64,7 +64,7 @@ enum layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [HDN] = LAYOUT_2_3x5_3(
-        MT(MOD_LCTRL, KC_GRV), 	KC_Q,  	KC_W,   KC_F,   KC_P,   	KC_B,                   KC_J,      KC_L,   		KC_U,     	KC_Y,   	KC_SCLN,   	MT(MOD_RCTRL, KC_QUOT),
+        MT(MOD_LCTL, KC_GRV), 	KC_Q,  	KC_W,   KC_F,   KC_P,   	KC_B,                   KC_J,      KC_L,   		KC_U,     	KC_Y,   	KC_SCLN,   	MT(MOD_RCTL, KC_QUOT),
         MT(MOD_LALT, KC_MINUS), KC_A,  	KC_R,   KC_S,   KC_T,   	KC_G,                   KC_M,      KC_N,   		KC_E,     	KC_I,   	KC_O,   	MT(MOD_RALT, KC_BSLS),
               	                KC_Z,  	KC_X, 	KC_C,   KC_D,		KC_V,                   KC_K,      KC_H,   		KC_COMM,	KC_DOT,		KC_SLSH,
         LT(MO_NAV, KC_ESC), MT(MOD_LSFT, KC_TAB),  	LT(MO_SYM, KC_SPC),		                LT(MO_SYM, KC_ENT), MT(MOD_RSFT, KC_BSPC) , LT(MO_NAV, KC_DEL),
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [NAV] = LAYOUT_2_3x5_3(
-        KC_NO, 	KC_NO,	KC_NO,	KC_NO,  KC_NO,	KC_NO,            					KC_VOLU,    	KC_HOME,    KC_PGUP,	KC_NO,    	KC_,  KC_NO,
+        KC_NO, 	KC_NO,	KC_NO,	KC_NO,  KC_NO,	KC_NO,            					KC_VOLU,    	KC_HOME,    KC_PGUP,	KC_NO,    	KC_NO,  KC_NO,
         KC_NO, 	KC_NO,	KC_NO, 	KC_NO,	KC_PSCR,KC_NO,              				KC_LEFT,		KC_DOWN,   	KC_UP,  	KC_RGHT,	KC_INS,  KC_NO,
 				KC_NO,	KC_NO,  KC_NO,  KC_NO,  KC_NO,              				KC_VOLD,    	KC_END,    	KC_PGDN,  	KC_NO,   	KC_NO,
                                    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
